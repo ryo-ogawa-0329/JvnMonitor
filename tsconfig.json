@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    // どの書き方の JavaScript / import を使うか（Node.js に合わせる）
+    "module": "nodenext",
+    "target": "esnext",
+
+    // Node.js の型（process や fetch など）を読み込む
+    "types": ["node"],
+
+    // tsc は型チェックだけ。ファイルは作らない
+    "noEmit": true,
+    // import "./db.ts" のように .ts を書けるようにする
+    "allowImportingTsExtensions": true,
+    // Node.js がそのまま実行できない書き方を禁止する
+    "erasableSyntaxOnly": true,
+
+    // 厳しめにチェックする
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+
+    // ライブラリの中まではチェックしない（速くなる）
+    "skipLibCheck": true
+  }
+}
