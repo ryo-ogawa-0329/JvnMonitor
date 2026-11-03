@@ -1,0 +1,10 @@
+name: jvn-monitor
+run-name: ${{ github.actor }}
+on: [push]
+jobs:
+    alert:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "hello world"
+  
+  
