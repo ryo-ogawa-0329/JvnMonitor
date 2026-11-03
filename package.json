@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npx tsc --noEmit",
     "dev": "node --env-file=.env --watch src/main.ts"
   },
   "keywords": [],
@@ -16,6 +16,7 @@
     "fast-xml-parser": "^5.11.2"
   },
   "devDependencies": {
-    "@types/better-sqlite3": "^9.6.0"
+    "@types/better-sqlite3": "^9.6.0",
+    "typescript": "^7.0.2"
   }
 }
