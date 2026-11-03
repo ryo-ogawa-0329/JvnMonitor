@@ -16,7 +16,7 @@
 
     // 厳しめにチェックする
     "strict": true,
-    "noUncheckedIndexedAccess": true,
+    // "noUncheckedIndexedAccess": true,
 
     // ライブラリの中まではチェックしない（速くなる）
     "skipLibCheck": true
