@@ -5,6 +5,14 @@ jobs:
     alert:
         runs-on: ubuntu-latest
         steps:
-            - run: echo "hello world"
-  
-  
+            - name: Checkout
+              uses: action/checkout@v4
+            - name: Setup Nodejs
+              uses: action/setup-node@v4
+              with: 
+                  node-version: 24
+                  cache: npm
+              # package-lock.jsonからインストール
+            - run: npm ci
+
+            - run: npm run test
