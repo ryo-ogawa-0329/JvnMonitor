@@ -6,9 +6,9 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout
-              uses: action/checkout@v4
+              uses: actions/checkout@v4
             - name: Setup Nodejs
-              uses: action/setup-node@v4
+              uses: actions/setup-node@v4
               with: 
                   node-version: 24
                   cache: npm
