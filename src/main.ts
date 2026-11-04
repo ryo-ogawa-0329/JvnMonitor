@@ -49,6 +49,7 @@ try{
                                     }
                                 });
     const newItems = checkNewInfo(items,data);
+    const x: number = 123;
     if(data.length === 0){
         const count = regData(newItems);
         console.log(`登録件数: ${count}`);
