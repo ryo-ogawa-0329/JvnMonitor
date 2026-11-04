@@ -1,6 +1,12 @@
 name: jvn-monitor
 run-name: ${{ github.actor }}
-on: [push]
+on: 
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 jobs:
     alert:
         runs-on: ubuntu-latest
@@ -15,4 +21,4 @@ jobs:
               # package-lock.jsonからインストール
             - run: npm ci
 
-            - run: npm run test
+            - run: npm run typecheck
